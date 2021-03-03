@@ -7,6 +7,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     overflow: hidden;
     margin: 0;
@@ -39,9 +40,28 @@ body{
 .panel.active{
 flex: 5;
 }
+.panel:hover{
+    flex:1.5;
+}
 .panel.active h3{
     opacity: 1;
     transition: opacity 0.3s ease-in-out 0.4s;
+}
+.footer{
+    
+}
+.footer__copy {
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 8px 0;
+    font-weight: 400;
+    font-family: 'Muli', sans-serif;
+}
+.footer__content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 @media(max-width: 480px) {
     .container{
